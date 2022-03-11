@@ -44,6 +44,7 @@ d = []
 d = [date_time] * len(aptPrices)
 print(d)
 
+# Create csv, append results
 with open('apartments.csv', 'a') as f:
     writer = csv.writer(f)
     writer.writerows(zip(apartments, aptPrices, d))
